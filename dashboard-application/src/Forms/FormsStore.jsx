@@ -57,4 +57,4 @@ function FormStore() {
   )
 }
 
-export default FormStore
+export default FormStore;

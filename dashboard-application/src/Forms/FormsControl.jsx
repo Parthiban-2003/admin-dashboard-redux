@@ -5,7 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { v4 as uuid } from "uuid";
 
 function FormsControl() {
-  const { id } = useParams();  
+  const { id } = useParams();
   const users = useSelector(state => state.forms.users);
   const existingUser = users.find(u => u.id === id);
 
@@ -81,7 +81,7 @@ function FormsControl() {
           placeholder="Password"
           value={form.password}
           onChange={handleChange}
-          required={!id} 
+          required={!id}
         />
 
         <div className="mb-2">
