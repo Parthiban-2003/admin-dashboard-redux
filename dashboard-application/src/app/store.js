@@ -3,6 +3,6 @@ import formsReducer from '../features/formsSlice'
 
 export const store = configureStore({
   reducer: {
-    forms: formsReducer
+    forms: formsReducer,
   }
 })

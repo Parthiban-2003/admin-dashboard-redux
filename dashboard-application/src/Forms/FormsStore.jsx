@@ -1,11 +1,11 @@
-import { useSelector, useDispatch } from 'react-redux'
-import { deleteUser } from '../features/formsSlice'
-import { useNavigate } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux';
+import { deleteUser } from '../features/formsSlice';
+import { useNavigate } from 'react-router-dom';
 
 function FormStore() {
-  const users = useSelector(state => state.forms.users)
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const users = useSelector(state => state.forms.users);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   return (
     <div className="container mt-4">
