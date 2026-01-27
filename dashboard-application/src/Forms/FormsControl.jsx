@@ -23,9 +23,14 @@ function FormsControl() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (existingUser) setForm(existingUser);
+    if (existingUser) {
+      setForm({
+        ...existingUser,
+        skills: existingUser.skills || [], 
+      });
+    }
   }, [existingUser]);
-
+  
   const handleChange = e => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });

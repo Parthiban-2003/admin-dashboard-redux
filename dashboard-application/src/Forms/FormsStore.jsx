@@ -33,7 +33,7 @@ function FormStore() {
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.gender}</td>
-              <td>{user.skills.join(',')}</td>
+              <td>{user.skills?.join(', ') || '—'}</td>
               <td>{user.country}</td>
               <td>
                 <button
