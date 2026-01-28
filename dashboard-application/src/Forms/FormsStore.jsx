@@ -24,6 +24,7 @@ function FormStore() {
             <th>Gender</th>
             <th>Skills</th>
             <th>Country</th>
+            <th>Messages</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -35,6 +36,7 @@ function FormStore() {
               <td>{user.gender}</td>
               <td>{user.skills?.join(', ') || '—'}</td>
               <td>{user.country}</td>
+              <td>{user.textBoxs}</td>
               <td>
                 <button
                   className="btn btn-primary btn-sm me-2"
