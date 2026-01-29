@@ -15,7 +15,7 @@ function FormsControl() {
     password: "",
     gender: "",
     skills: [],
-    about: "",
+    message: "",
     country: ""
   });
 
@@ -151,8 +151,8 @@ function FormsControl() {
           <label>About:</label>
           <textarea
             className="form-control"
-            name="about"
-            value={form.about}
+            name="message"
+            value={form.message}
             onChange={handleChange}
           ></textarea>
         </div>
