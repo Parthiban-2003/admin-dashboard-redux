@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
-import Login from './pages/login';
-import FormStore from './formsInformations/FormsStore';
-import FormsControl from './formsInformations/FormsControl';
+import Login from './Authentication/login';
+import FormStore from './pages/FormsStore';
+import FormsControl from './pages/FormsControl';
 
 function App() {
   return (
